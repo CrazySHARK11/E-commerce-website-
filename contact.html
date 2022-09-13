@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Products - Red store | Ecommerce</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+</head>
+<body>
+<!-- Header and banner -->
+
+        
+        <div class="container">
+            
+            <div class="navbar">
+                <div class="logo">
+                    <a href="index.html"><img src="img/logo.png" width="125px" alt=""></a>
+                </div>
+            <nav>
+                <ul id="menuitem">
+                    <li><a href="index.html"> Home </a></li>
+                    <li><a href="products.html"> Products </a></li>
+                    <li><a href=""> About </a></li>
+                    <li><a href=""> Contact </a></li>
+                    <li><a href="contact.html"> Account </a></li>
+                </ul>
+            </nav>
+            <a href="cart.html"><img src="img/cart.png" width="30px" height="30px" alt=""></a>
+            <img src="img/menu.png"  class="menu-icon" onclick="menutoggle()" alt="">
+        </div>
+    </div>
+    <!-- Header and banner -->
+
+<!-- account and login  -->
+<section class="account-page">
+    <div class="container">
+        <div class="row">
+            <div class="col-2">
+                <img src="img/image1.png" width="100%" alt="">
+            </div>
+
+            <div class="col-2">
+                <div class="form-container">
+                    <div class="form-btn">
+                        <span id="log-btn"  onclick="loginfr()"> Login </span>
+                        <span id="reg-btn"  onclick="register()"> Register </span>
+                        <hr id="indicator">
+                    </div>  
+                    <form  id="loginform">
+                        <input type="text" placeholder="Username">
+                        <input type="password" placeholder="password">
+                        <button type="submit" class="btn" >Login </button>
+                        <a href="#" >Forgot Password</a>
+                    </form>
+    
+                    <form id="regform">
+                        <input type="text" placeholder="Username">
+                        <input type="password" placeholder="password">
+                        <button type="submit" class="btn" >Register </button>
+                        <a href="#" >Forgot Password</a>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+<!-- account and login  -->
+
+<!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="footer-col-1">
+                <h3>Download Our App</h3>
+                <p>Download our app for Android and ios mobile phones</p>
+             <div class="app-logo">
+                <img src="img/app-store.png" alt="">
+                <img src="img/play-store.png" alt="">
+             </div>
+            </div>
+            <div class="footer-col-2">
+                <img src="img/logo-white.png" alt="">
+                <p>Our Purpose is to Sustainbly make the pleasure and 
+                    benefits of sports accessible to many 
+                </p>
+            </div>
+            <div class="footer-col-3">
+                <h3>Useful links</h3>
+                <ul>
+                    <li>Coupons</li>
+                    <li>Blog Post</li>
+                    <li>Return Policy</li>
+                    <li>Join Affiliate </li>
+                </ul>
+            </div>
+
+            <div class="footer-col-4">
+                <h3>Follow us</h3>
+                <ul>
+                    <li>Facebook</li>
+                    <li>Twitter</li>
+                    <li>Instagram</li>
+                    <li>Youtube</li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <p class="copyright">Copyright 2022 - Lovenish</p>
+    </div>
+</footer>
+<!-- Footer -->
+
+<script src="js/main.js"></script>
+
+<!-- // =================================== Form = -->
+<script>
+
+
+const login = document.getElementById("loginform");
+const regform = document.getElementById("regform");
+const indicator = document.getElementById("indicator");
+
+function register(){
+    regform.style.transform = " translateX(0px)"
+    login.style.transform = " translateX(0px)"
+    indicator.style.transform = "translateX(100px)"
+}
+function loginfr(){
+    regform.style.transform = " translateX(300px)"
+    login.style.transform = " translateX(300px)"
+    indicator.style.transform = "translateX(0px)"
+}
+
+
+
+</script>
+
+</body>
+</html>
